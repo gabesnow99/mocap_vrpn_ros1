@@ -1,0 +1,15 @@
+services:
+  vrpn_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - ROS_DISTRO=noetic
+    stdin_open: true
+    tty: true
+    # volumes:
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    # priviledged: true
+    network_mode: host
