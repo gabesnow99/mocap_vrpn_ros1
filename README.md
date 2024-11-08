@@ -9,7 +9,7 @@ Clone or copy the Dockerfile and compose.yaml. Just make sure they are in the sa
 docker compose up -d
 docker compose exec vrpn_service bash
 ```
-Then run ```roslaunch vrpn_client_ros sample.launch server:=192.168.1.3```. You will likely a second window to access the published data. Check that the data vehicle positions are being published correctly by running ```rostopic list```. You should see something like: /vrpn_optitrack/robot_name/pose.
+Then run ```roslaunch vrpn_client_ros sample.launch server:=192.168.1.3```. You will likely a second window to access the published data. Check that the data vehicle positions are being published correctly by running ```rostopic list```. You should see something like: /vrpn_client_node/ROBOT_NAME/pose.
 
 Troubleshooting:
 - Ensure you are connected to the MAGICC wifi.
