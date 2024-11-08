@@ -18,5 +18,5 @@ Troubleshooting:
 - Verify that the IP address on the adjacent computer matches the server in the command.
 
 For those who wish to use without Docker:
-- Be sure to apt install ros-{distro}-vrpn-client-ros.
+- Be sure to apt install ros-ROS_DISTRO-vrpn-client-ros.
 - Run the same command as above.
